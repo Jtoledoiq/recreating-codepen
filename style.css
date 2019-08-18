@@ -45,6 +45,7 @@ h6 {
 
 .editor{
   border:1px solid black;
+  background: #1A2B33;
 }
 
 .editor__header {
@@ -58,6 +59,10 @@ h6 {
   margin:5px;
 }
 
+.editor__header {
+  background: #162731;
+  color:white;
+}
 
 .editor__header button:nth-child(3){
   justify-self: end;
@@ -67,5 +72,54 @@ h6 {
 
 .editor__code {
   display: grid;
-  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr;
+
+  color:#808080;
+
+}
+
+.editor__input {
+  color:#808080;
+  background: #1A2B33;
+  align-self: stretch;
+  justify-content:stretch;
+  border:none;
+  height: 100%;
+}
+
+.pen {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto auto;
+  align-items: center;
+  grid-gap: 10px;
+  background-color: black;
+  color:white;
+  border-bottom: 6px solid #272727;
+  padding:10px;
+
+}
+
+
+.preview {
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+}
+
+button {
+  background:transparent;
+  color: white;
+  border: none;
+  background: #343436;
+  padding:10px;
+  border-radius: 7px;
+
+}
+
+.settings {
+  background: black;
+}
+
+.settings button {
+  padding:4px;
 }
