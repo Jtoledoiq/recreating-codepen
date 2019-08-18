@@ -35,16 +35,19 @@ h6 {
 }
 
 .codepen >*{
-  border:1px solid black;
+
 }
 
 .code {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+    border-bottom:10px solid #272727;
 }
 
 .editor{
-  border:1px solid black;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  border-left:10px solid #272727;
   background: #1A2B33;
 }
 
@@ -85,6 +88,12 @@ h6 {
   justify-content:stretch;
   border:none;
   height: 100%;
+  line-height: 24px;
+}
+
+.editor__number {
+  display: block;
+  padding:0 10px
 }
 
 .pen {
