@@ -33,3 +33,39 @@ h6 {
   height: 100vh;
   grid-template-rows: auto 1fr 1fr auto;
 }
+
+.codepen >*{
+  border:1px solid black;
+}
+
+.code {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.editor{
+  border:1px solid black;
+}
+
+.editor__header {
+  display: grid;
+  grid-template-columns: auto 1fr 1fr;
+  justify-items: start;
+
+
+}
+.editor__header>* {
+  margin:5px;
+}
+
+
+.editor__header button:nth-child(3){
+  justify-self: end;
+
+}
+
+
+.editor__code {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
